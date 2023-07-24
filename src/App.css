@@ -1,0 +1,83 @@
+:root{
+  --background : #010220;
+  --heading : #AEEDE2;
+  --subheading : #9A9CE9;
+  --text : #A2B9ED;
+  --primary : #A3DCEF;
+}
+
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+.padding{
+  padding: 50px 80px;
+}
+.padding-vertical{
+  padding: 50px 0;
+}
+.padding-horizontal{
+  padding: 0 80px;
+}
+
+/* Laptops */
+@media only screen and (max-width : 992px){
+  .padding{
+    padding: 50px 80px;
+  }
+  .padding-vertical{
+    padding: 50px 0;
+  }
+  .padding-horizontal{
+    padding: 0 80px;
+  }
+}
+
+
+/* Tablets */
+@media only screen and (max-width : 768px){
+  .padding{
+    padding: 50px;
+  }
+  .padding-vertical{
+    padding: 50px 0;
+  }
+  .padding-horizontal{
+    padding: 0 50px;
+  }
+}
+
+
+
+/* Mobile Devices */
+@media only screen and (max-width : 600px){
+  .padding{
+    padding: 40px 30px;
+  }
+  .padding-vertical{
+    padding: 40px 0;
+  }
+  .padding-horizontal{
+    padding: 0 30px;
+  }
+}
+
+/* Smaller devices */
+@media only screen and (max-width : 480px){
+  .padding{
+    padding: 20px 20px;
+  }
+  .padding-vertical{
+    padding: 20px 0;
+  }
+  .padding-horizontal{
+    padding: 0 20px;
+  }
+}

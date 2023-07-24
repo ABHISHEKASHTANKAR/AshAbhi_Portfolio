@@ -1,0 +1,231 @@
+#skills{
+    min-height: 90vh;
+    padding: 0 80px;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+#skills .heading{
+    margin-bottom: 50px;
+}
+#skills .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+#skills .content .left{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+#skills .content .left .skills-items{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+#skills .content .left .skills-items .item{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+#skills .content .left .skills-items .item .logo{
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills .content .left .skills-items .item .logo img{
+    width: 80%;
+}
+
+#skills .content .left .skills-items .item .bar{
+    height: 8px;
+    border-radius: 10px;
+    background: var(--subheading);
+    width: 80%;
+    box-shadow: 0 0 5px #00b7ff;
+    position: relative;
+    border: solid 0.5px var(--heading);
+}
+
+#skills .content .left .skills-items .item .bar .inner-bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 8px;
+    background: #0c3057;
+    border-right: solid 0.5px var(--heading);
+    transition-delay: 0.5s;
+    transition: all 1.5s ease-in;
+}
+
+#skills .content .left .skills-items .item .percentage{
+    width: 8%;
+    font-size: 18px;
+    color: var(--primary);
+}
+
+#skills .content .left .skills-items img{
+    
+}
+
+#skills .content .left .counter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+#skills .content .left .counter .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills .content .left .counter .item .number{
+    font-family: "Bungee Inline", sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 50px;
+    color: var(--subheading);
+}
+
+#skills .content .left .counter .item .text{
+    color: var(--primary);
+    font-family: 'Lobster', sans-serif;
+    text-align: center;
+}
+
+
+#skills .content .right{
+    width: 37%;
+}
+#skills .content .right img{
+    width: 100%;
+    transition: all 0.5s ease;
+    filter: drop-shadow(0 0 100px rgb(6, 193, 255));
+    animation: animateImg 15s infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 992px){
+    #skills{
+        padding: 0 50px;
+        padding-bottom: 50px;
+    }
+
+    #skills .content .left{
+        margin-top: 25px;
+        row-gap: 20px;
+        flex-direction: column-reverse;
+        width: 100%;
+    } 
+
+    #skills .content .left .skills-items{
+        width: 100%;
+    }
+
+    #skills .content .left .counter{
+        margin-bottom: 0;
+    }
+
+    #skills .content .left .item{
+        background: transparent;
+    }
+
+    #skills .content .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #skills .content .right img{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width : 850px){
+    #skills .content .left .counter .item .number{
+        font-size: 35px;
+    }
+
+    #skills .content .left .skills-items{
+        row-gap: 0;
+    }
+
+    #skills .content .left .skills-items .item{
+        height: 55px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 600px){
+    #skills{
+        padding:0 20px;
+    }
+
+    #skills .content .left .skills-items .item{
+        height: 45px;
+    }
+
+    #skills .content .left .counter .item .text{
+        font-size: 12px;
+    }
+    #skills .content .left .counter .item .text span{
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 476px){
+    
+    #skills .content .right img{
+        width: 100%;
+    }
+
+    #skills .content .left .skills-items .item{
+        height: 35px;
+    }
+
+    #skills .content .left .skills-items .item .percentage{
+        font-size: 12px;
+    }
+}

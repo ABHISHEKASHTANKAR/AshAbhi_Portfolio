@@ -1,0 +1,317 @@
+.home{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    padding: 0 80px;
+    color: #9a9ce9;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.home .content{
+    width: 60%;
+}
+
+.home .content h1 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.home .content h1 span {
+    color: #a3dcef;
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+.home .content h2 {
+    margin: 0;
+    font-size: 45px;
+    color: #9a9ce9;
+    font-weight: 500;
+}
+
+.home .content h3 {
+    margin: 0;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.home .content h3 span {
+    font-weight: 600;
+    color: #a3dcef;
+}
+
+
+.home .content .btn-container a {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 225px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: solid 2px var(--primary);
+    background: var(--subheading);
+    color: var(--background);
+    transition: all 0.5s ease;
+    text-decoration: none;
+    box-shadow: 0px 0px 80px rgba(0, 179, 255, 0.3);
+}
+
+.home .content .btn-container a .icon {
+    margin-left: 10px;
+    font-size: 20px;
+    color: var(--background);
+    font-weight: bold;
+}
+
+.home .content .btn-container:hover a{
+    letter-spacing: 3px;
+    box-shadow: 0px 0px 80px rgba(0, 179, 255, 0.3);
+}
+
+
+.home .banner{
+    width: 37%;
+}
+.home .banner img {
+    width: 100%;
+    transition: all 0.5s ease;
+    filter: drop-shadow(0 0 100px #00b5fd);
+    animation: animateImg 15s infinite;
+}
+
+.home .banner img:hover {
+    transform: scale(1.05);
+}
+
+.home .social {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, -50%);    
+}
+
+.home .social ul{
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.home .social ul li .icon{
+    margin: 10px;
+    font-size: 20px;
+    color: #a3dcef;
+    box-shadow: 0px 0px 80px rgba(0, 179, 255, 0.977);
+    transition: all 0.5s ease;
+}
+
+#home .social ul li:hover .icon {
+    transform: scale(1.5);
+    box-shadow: 0px 0px 80px rgba(0, 179, 255, 0.977);
+}
+
+
+@keyframes animateImg{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@media screen and (max-width : 1025px){
+    .home .content h1{
+        font-size: 40px;
+        display: inline;
+        margin-left: 10px;
+    }
+    .home .content h1 span{
+        font-size: 45px;
+        display: block;
+        letter-spacing: 1px;
+    }
+    .home .content h2{
+        display: inline;
+        font-size: 40px;
+    }
+    .home .content h3{
+        font-size: 35px;
+    }
+    .home .content h3 span{
+        font-size: 40px;
+        display: block;
+    }
+}
+
+
+@media screen and (max-width : 992px) {
+    .home {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 50px;
+    }
+    .home .banner{
+        width: 100%;
+    }
+    .home .banner img{
+        width: 70%;
+    }
+    .home .content{
+        width: 100%;
+    }
+    .home .content h1{
+        font-size: 50px;
+    }
+    .home .content h1 span{
+        font-size: 55px;
+    }
+    .home .content h2{
+        font-size: 50px;
+    }
+    .home .content h3{
+        font-size: 40px;
+    }
+    .home .content h3 span{
+        font-size: 45px;
+       
+    }
+    .home .content .btn-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .home {
+        padding: 0px 40px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home .content h1{
+        font-size: 40px;
+        display: inline;
+        margin-left: 10px;
+    }
+    .home .content h1 span{
+        font-size: 45px;
+        display: block;
+        letter-spacing: 1px;
+    }
+    .home .content h2{
+        display: inline;
+        font-size: 40px;
+    }
+    .home .content h3{
+        font-size: 30px;
+    }
+    .home .content h3 span{
+        font-size: 40px;
+        display: block;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    .home {
+        flex-direction: row;
+        row-gap: 0;
+    }
+
+    .home .content{
+        height: 350px;
+    }
+    .home .banner img {
+        width: 100%;
+    }
+
+    .home .content h1 {
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+
+    .home .content h1 span {
+        font-size: 1.65rem;
+    }
+
+    .home .content h2 {
+        font-size: 1.5rem;
+        display: inline;
+    }
+
+    .home .content h3 {
+        font-size: 1.3rem;
+    }
+
+    .home .content h3 span {
+        font-size: 1.5rem;
+        font-weight: 300;
+        font-weight: 600;
+        display: block;
+    }
+
+    .home .content .btn-container a {
+        margin-top: 20px;
+        width: 60%;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .home .content button .icon {
+        font-size: 18px;
+    }
+
+    .home .content button:hover {
+        letter-spacing: 1.5px;
+    }
+
+    .home .social{
+        bottom: 30px;
+    }
+
+}
+
+
+@media screen and (max-width : 385px){
+    
+    .home .content h1 {
+        font-size: 1.45rem;
+        margin-left: 10px;
+    }
+
+    .home .content h1 span {
+        font-size: 1.58rem;
+    }
+
+    .home .content h2 {
+        font-size: 1.45rem;
+    }
+
+    .home .content h3 {
+        font-size: 1.3rem;
+    }
+
+    .home .content h3 span {
+        font-size: 1.5rem;
+    }
+}
