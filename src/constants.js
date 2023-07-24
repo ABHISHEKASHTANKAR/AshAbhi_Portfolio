@@ -8,8 +8,8 @@ export const projectArr = [
     },
     {
         name : "GupShup",
-        codeLink : "",
-        projectLink : "",
+        codeLink : "https://github.com/ABHISHEKASHTANKAR/GupShup.git",
+        projectLink : "https://scintillating-tartufo-d1b871.netlify.app/",
         image : "/projects/gupshup.png",
         description : "GupShup a real time chat application built using MERN, where users could communicate with each other in a seamless and efficient manner."
     },
@@ -36,8 +36,8 @@ export const projectArr = [
     },
     {
         name : "AshAbhi",
-        codeLink : "",
-        projectLink : "",
+        codeLink : "https://github.com/ABHISHEKASHTANKAR/AshAbhi_Portfolio.git",
+        projectLink : "https://portfolio-84fdc.web.app",
         image : "/projects/ashabhi.png",
         description : "A dynamic portfolio website with Framer Motion animations. Showcased creativity, coding skills, and delivered a captivating user experience."
     }
