@@ -43,11 +43,11 @@ const Navbar = () => {
         <div className={isOpen ? "menu" : "menu open"} ref = {menuRef}>
             <ul className='flex'>
                 <li><Link  className='item' to="home" activeClass='active' smooth = {true} spy = {true} offset={-200}>Home</Link></li>
-                <li><Link  className='item' to="about" activeClass='active' smooth = {true} spy = {true} offset={-60}>About</Link></li>
-                <li><Link  className='item' to="skills" activeClass='active' smooth = {true} spy = {true} offset={-60}>Skills</Link></li>
-                <li><Link  className='item' to="projects" activeClass='active' smooth = {true} spy = {true} offset={-60}>Projects</Link></li>
-                <li><Link  className='item' to="contact" activeClass='active' smooth = {true} spy = {true} offset={-60}>Contact</Link></li>
-                <li className='btn-outer'><Link to="contact" className='btn' smooth={true} spy = {true} offset={-60}>Hire Me</Link></li>
+                <li><Link  className='item' to="about" activeClass='active' smooth = {true} spy = {true} offset={-70}>About</Link></li>
+                <li><Link  className='item' to="skills" activeClass='active' smooth = {true} spy = {true} offset={-70}>Skills</Link></li>
+                <li><Link  className='item' to="projects" activeClass='active' smooth = {true} spy = {true} offset={-70}>Projects</Link></li>
+                <li><Link  className='item' to="contact" activeClass='active' smooth = {true} spy = {true} offset={-70}>Contact</Link></li>
+                <li className='btn-outer'><Link to="contact" className='btn' smooth={true} spy = {true} offset={-70}>Hire Me</Link></li>
             </ul>
         </div>
         <div className="menu-btn flex" onClick = {handleClick}>
