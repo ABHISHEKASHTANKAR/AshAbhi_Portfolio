@@ -57,11 +57,11 @@ Here are some screenshots of my portfolio website:
 
 ##### Skill Page
 
-![Skill Page](src/assets/screenshots/skill.png)
+![Skill Page](src/assets/screenshots/skills.png)
 
 ##### Project Page
 
-![Skill Page](src/assets/screenshots/project.png)
+![Project Page](src/assets/screenshots/projects.png)
 
 
 ### Contributing
