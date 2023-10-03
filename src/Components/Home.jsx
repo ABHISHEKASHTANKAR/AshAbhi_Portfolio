@@ -11,7 +11,7 @@ import {motion} from 'framer-motion'
 import {fadeIn, zoomIn} from '../variants.js';
 import {TypeAnimation} from 'react-type-animation'
 
-import pdf from '../assets/Abhishek.pdf'
+import pdf from '../assets/Abhishek_Ashtankar_CV.pdf';
 
 const Home = () => {
     return (
@@ -57,7 +57,7 @@ const Home = () => {
                     whileInView={"show"}
                     viewport={{once:false, amount:0.7}}
                     href={pdf}
-                    download = "Abhishek.pdf"
+                    download = "Abhishek_Ashtankar_Resume.pdf"
                     >Download CV <FiDownload className='icon' /></motion.a>
                 </div>
             </motion.div>

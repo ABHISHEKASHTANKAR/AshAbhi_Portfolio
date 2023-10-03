@@ -5,7 +5,7 @@ import hero from '../assets/hero2.png'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
-import pdf from '../assets/Abhishek.pdf'
+import pdf from '../assets/Abhishek_Ashtankar_CV.pdf';
 import { userDetails } from '../constants'
 
 const About = () => {
